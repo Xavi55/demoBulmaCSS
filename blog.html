@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blogger</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<style>
+			.grid
+			{
+				display:grid;
+				grid-template-columns:1fr minmax(0,624px) 1fr;
+			}
+			.grid *
+			{
+				grid-column:2/3;
+			}
+			.noPadHori
+			{
+				padding-left:0;
+				padding-right:0;
+			}
+			@media (max-width: 672px)
+			{
+				body
+				{
+					font-size:1.5em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- .section -->
+		<section class="section noPadHori">
+			<div class="container grid">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="#">Go Home</a></li>
+						<li class="is-active"><a href="#" aria-current="page">Some Other Page</a></li>
+						<li><a>++</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- /.section -->
+		
+		<section class="section noPadHori" style=padding-top:0;>
+			<div class="container grid">
+					<article class="media">
+						<figure class="media-left image is-128x128">
+							<img src=https://media.giphy.com/media/G3w5bFfY85rag/giphy.gif>
+						</figure>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<strong>Kevin G</strong>
+									<a>Some Link Here</a><br>
+									<span class=has-text-danger>READ, READ!<br>
+									<time datetime=2018-6-27>Jun 27</time> - 1 min read</span>
+								</p>
+							</div>
+						</div>
+					</article>
+							<!-- ... -->
+					
+					<div>
+						<h1 class="title is-2">Welcome to my blog!</h1>
+						<h2 class="subtitle is-3 has-text-primary">Learn</h2>
+					</div>
+					
+					<div class="columns grid-xl is-variable is-1 is-mobile">
+						<div class=column>
+							<figure class="image card is-256x256">
+							<img src=https://media.giphy.com/media/G3w5bFfY85rag/giphy.gif>
+						</figure>
+						</div>
+						
+						<div class=column>
+							<figure class="image card">
+							<img src=https://media.giphy.com/media/G3w5bFfY85rag/giphy.gif>
+						</figure>
+						</div><div class=column>
+							<figure class="image card">
+							<img src=https://media.giphy.com/media/G3w5bFfY85rag/giphy.gif>
+						</figure>
+						</div>
+					</div>
+							
+					<figcaption class=level>
+						<small class="level-item has-text-primary">
+							Caption: haHAAha haHAAA
+						</small>
+					</figcaption>
+					
+					<div class="content is-md notification">
+						<h1>#Title</h1>
+						<p>Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph 
+						<br>Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph </p>
+					</div>
+			</div>
+		</section>
+
+	</body>
+</html>
