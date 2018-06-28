@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Landing Page!</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <link rel="stylesheet" href="helpers.css">
+        <!--<link rel="stylesheet" href="debug.css">-->
+		<style>
+		.text
+		{
+			color:white;
+			font-size:2.5em;
+		}
+		#a { grid-area: a; }
+		#b { grid-area: b; }
+		#c { grid-area: c; }
+		#d { grid-area: d; }
+		#e { grid-area: e; }
+		#grid 
+		{
+    	display: grid;
+    	grid-template-areas:
+        "a  a  a  a"
+        "b  c  d  e";
+        
+        grid-row-gap:1em;
+        font-size:2em;
+		}
+		.hero
+		{
+			background:black url(https://i.redditmedia.com/NfQB3HE6FngSIUIQzOKOEIevatsSxPpI1zhJTFNdGis.jpg?s=86f67170fb7e0226db3c72f4ea3b1052) center / cover;
+		}
+		@media (max-width:1024px){.hero{background:black url(https://i.redditmedia.com/NfQB3HE6FngSIUIQzOKOEIevatsSxPpI1zhJTFNdGis.jpg?s=86f67170fb7e0226db3c72f4ea3b1052) center / cover;}}
+		@media (max-width:640px)
+		{
+		.hero{background:black url(https://i.redditmedia.com/NfQB3HE6FngSIUIQzOKOEIevatsSxPpI1zhJTFNdGis.jpg?s=86f67170fb7e0226db3c72f4ea3b1052) center / cover;}
+		
+			#grid
+			{
+			grid-template-areas:
+            "a a a"
+            "b c d"
+            "e e e";
+		
+			}
+		}
+		</style>
+	</head>
+	<body>
+
+<!-- .hero -->
+<section class="hero is-fullheight">
+	<div class="hero-head">
+		<div class="columns is-mobile is-marginless heading has-text-weight-bold">
+			<div class="column left">
+				<figure class="media-right image is-64x64" style=padding-top:1em><a href=https://www.dodge.com target=_blank><img src=http://thenewswheel.com/wp-content/themes/patterns/timthumb.php?src=http://thenewswheel.com/wp-content/uploads/2015/03/Dodge_logo_19941.png&q=90&w=660&zc=1></a>
+				</figure>
+			</div>
+			<div class="column center desktop">
+				<p class="navbar-item text">Model I</p>
+				<p class="navbar-item text">Model S</p>
+				<p class="navbar-item text">Model X</p>
+			</div>
+			<div class="column right">
+				<p class="navbar-item desktop text">Shop</p>
+				<p class="navbar-item desktop text">Details / Specs</p>
+				<figure>
+					<i class="fa fa-bars" style="color:white;width: 9em; height: 3em;"></i>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<div class=hero-body>
+		<div class="is-overlay has-text-centered single-spaced" style=padding-top:10%;>
+			<h1 class="text subtitle is-2">Dodge</h1>
+			<h2 class="text title is-1">Charger</h2>
+		</div>
+	</div>
+
+	<div class="hero-foot center" style="padding:2em;">
+		<div id=grid>
+			<div id=a>
+				<p class=has-text-centered style=color:white;font-size:1em;>Get Charged with the luxurious and mean-looking Dodge Charger</p>
+			</div>
+			<div id="b" class="center-column">
+			<p class="title has-text-white center">
+				<i class="fas fa-tachometer-alt has-text-grey-light"
+					style="width: 0.75em; height: 0.75em;"></i>
+				1.9<span class="is-size-5">s</span>
+			</p>
+			<p class="subtitle has-text-white">0-60 mph</p>
+		</div>
+			<div id=c>
+				<p class="title has-text-white">+150mph</p>
+				<p class="subtitle has-text-white">Top Speed</p>
+			</div>
+			<div id=d>
+				<p class="title has-text-white"><i class="fa fa-snowflake"></i> A/C</p>
+				<p class="subtitle has-text-white center">With SubXero Tech</p>
+			</div>
+			<div id=e>
+				<a class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold"
+				style="width: 100%; border: 0.15em solid white;">
+				Reserve Now
+				</a>
+				<!--
+				<p class="has-text-white" style="border:white 5px solid;border-radius:15px;">Order Yours</p>
+				-->
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /.hero -->
+
+	</body>
+</html>
